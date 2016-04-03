@@ -1,0 +1,69 @@
+.header {
+	padding: 14px;
+	box-shadow: 0 5px 10px 0 fade(black, 5%);
+	position: relative;
+	z-index: 6;
+
+	&__btn {
+		color: fade(@link, 80%);
+		display: inline-block;
+		text-decoration: none;
+		border: 2px solid fade(@link, 50%);
+		border-radius: 22px;
+		padding: 9px 30px;
+		position: relative;
+		transition: all .4s;
+
+		&:before {
+			content: '';
+			position: absolute;
+			display: block;
+			width: 12px;
+			height: 12px;
+			border-top: 2px;
+			border-right: 2px;
+			border-top-color: fade(@link, 50%);
+			border-right-color: fade(@link, 50%);
+			border-top-style: solid;
+			border-right-style: solid;
+			left: 22px;
+			top: 13px;
+			transition: all .4s;
+		}
+
+		&--prev{			
+			padding-left: 40px; 
+
+			&:before{				
+				transform: rotate(-135deg);
+			}
+			
+		}
+
+		&--next{			
+			padding-right: 40px; 
+
+			&:before{
+				left: auto;
+				right: 22px;			
+				transform: rotate(45deg);
+			}
+			
+		}
+
+
+		&:hover {
+			text-decoration: none;
+			border: 2px solid @link;
+			color: @link;
+			transition: all .2s;
+
+			&:before {
+				border-top-color: @link;
+				border-right-color: @link;
+				transition: all .2s;
+
+			}
+		}
+	}
+}

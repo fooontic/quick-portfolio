@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+html(lang="ru")
+head
+	
+	title Чокупить? — Дизайн списка покупок для Android
+	:verbatim
+	include ./blocks/head.jade
+
+body.whatobuy
+
+	:verbatim
+	include ./mixins/header.jade
+
+	+header('#','#')
+
+	section.whatobuy__promo.white
+		.container-fluid
+			.row
+				.col-xs-7.offset
+
+					img.whatobuy__logo.img-responsive(src="img/whatobuy__logo.png", alt="")
+
+					.row
+						.col-xs-5
+							h3.project__subtitle Дизайн приложения для&nbsp;Android
+						.col-xs-7
+							p.project__flow Максимально простой список покупок для Android. Без категорий, наворотов и прочего. Основная цель была сократить количествово лишних кликов которыми страдают все популярные аналоги. Добавил — вычеркнул, добавил — вычеркнул. <br><br>
+								a.link(href="#") Скачать из Google Play
+
+						.col-xs-5
+							p.project__madein.project__madein--logomotiv Проект выполнен в<br>
+								a.link(href="http://logomotivapp.ru/") Дизайн-&nbsp;студии Logomotiv
+						.col-xs-3
+							p.project__madein Арт-директор: <br>Иван Большов
+						.col-xs-3 
+							p.project__madein Разработчик: <br>Илья Мясоедов
+
+
+				.col-xs-4
+					
+					.whatobuy__video-inner
+						video(autoplay="" loop="" muted="" poster="video/whatobuy.png")
+							source(src="video/whatobuy.webm" type="video/webm")
+							source(src="video/whatobuy.mp4" type="video/mp4")
+
+
+	section.whatobuy__screens
+
+		p.whatobuy__screens-flow Больше 30 экранов.<br>Адаптировано под планшеты
+
+
+	:verbatim
+	include ./blocks/footer.jade
+
+
+	
