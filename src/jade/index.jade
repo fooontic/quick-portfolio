@@ -2,56 +2,51 @@
 html(lang="ru")
 head
 	
-	title Чокупить? — Дизайн списка покупок для Android
+	title Матвеев Вадим
 	:verbatim
 	include ./blocks/head.jade
 
-body.whatobuy
+body.about
 
-	:verbatim
-	include ./mixins/header.jade
+	header
+		.supheader
 
-	+header('#','durecipes_app.html')
-
-	section.whatobuy__promo.white
-		.container-fluid
-			.row
-				.col-xs-7.offset
-
-					img.whatobuy__logo.img-responsive(src="img/whatobuy__logo.png", alt="")
-
-					.row
-						.col-xs-5
-							h3.project__subtitle Дизайн приложения для&nbsp;Android
-							p.project__year 2014
-						.col-xs-7
-							p.project__flow Максимально простой список покупок для Android. Без категорий, наворотов и прочего. Основная цель была сократить количествово лишних кликов которыми страдают все популярные аналоги. Добавил — вычеркнул, добавил — вычеркнул. <br><br>
-								a.link(href="#") Скачать из Google Play
-
-						.col-xs-5
-							p.project__madein.project__madein--logomotiv Проект выполнен в<br>
-								a.link(href="http://logomotivapp.ru/") Дизайн-&nbsp;студии Logomotiv
-						.col-xs-3
-							p.project__madein Арт-директор: <br>Иван Большов
-						.col-xs-3 
-							p.project__madein Разработчик: <br>Илья Мясоедов
-
-
-				.col-xs-4
+		.header
+			.container-fluid
+				.row
 					
-					.whatobuy__video-inner
-						video(autoplay="" loop="" muted="" preload="none")
-							source(src="video/whatobuy.webm" type="video/webm")
-							source(src="video/whatobuy.mp4" type="video/mp4")
+					.col-xs-4
+
+					.col-xs-4
+						a.header__logo(href="#")
+							img.logo.m0a.img-responsive(src="img/logo.svg",alt="Vadik Matveev")
+
+	.container-fluid.about(style="margin-top: 70px; margin-bottom 100px")
+		.row
+			.col-xs-4.col-xs-offset-1
+
+				img.about__photo.img-responsive(src="img/my-face.jpg",alt="Vadik Matveev")
+
+			.col-xs-6
+
+				h3.project__h3 О себе
+
+				p.about__flow Дизайнер. Проектирую сайты, мобильные приложения, логотипы и фирменные стили. Сам верстаю разработанные веб-проекты. Использую Jade, Less и Gulp. Помимо этих навыков также занимался трехмеркой и анимацией в разное время.
+
+				h3.project__h3 Образование
+
+				p.about__flow Окончил СПБГУ по специальности графический дизайнер. Также окончил курсы в московской школе Real Time School по основам Adobe After Effects. В прошлом году прошел два курса по базовой и ПРО верстке в школе интернет-технологий Epic Skills. 2016 год начал с того, что прошел там же курсы по основам js. Помимо этого помогаю преподавателям школы в качестве тьютора. 
+
+				h3.project__h3 В свободное время
+
+				p.about__flow Люблю порисовать буквы, сходить на концерт, поиграть в настольные игры или прогуляться по Санкт-Петербургу. Пью кофе, пиво и вино. Не курю. 
 
 
-	section.whatobuy__screens
 
-		p.whatobuy__screens-flow Больше 30 экранов.<br>Адаптировано под планшеты
+	.container-fluid
+		.row
+			a.btn(href="whatobuy.html") Посмотреть портфолио
 
 
 	:verbatim
 	include ./blocks/footer.jade
-
-
-	

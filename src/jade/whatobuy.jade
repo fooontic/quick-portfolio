@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+html(lang="ru")
+head
+	
+	title Чокупить? — Дизайн списка покупок для Android
+	:verbatim
+	include ./blocks/head.jade
+
+body.whatobuy
+
+	header
+		.supheader
+			//- .container-fluid
+			//- 	.row
+			//- 		.col-xs-6.pull-right.text-right
+
+			//- 			a.link.link--white.lang.active RU
+			//- 			a.link.link--white.lang EN
+
+		.header
+			.container-fluid
+				.row
+					
+					.col-xs-4
+						//- a.header__btn.header__btn--prev(href=prev) Предыдущий
+
+					.col-xs-4
+						a.header__logo(href="index.html")
+							img.logo.m0a.img-responsive(src="img/logo.svg",alt="Vadik Matveev")
+					.col-xs-4
+						a.header__btn.header__btn--next.pull-right(href='durecipes_app.html') Следующий
+
+	section.whatobuy__promo.white
+		.container-fluid
+			.row
+				.col-xs-7.offset
+
+					img.whatobuy__logo.img-responsive(src="img/whatobuy__logo.png", alt="")
+
+					.row
+						.col-xs-5
+							h3.project__subtitle Дизайн приложения для&nbsp;Android
+							p.project__year 2014
+						.col-xs-7
+							p.project__flow Максимально простой список покупок для Android. Без категорий, наворотов и прочего. Основная цель была сократить количествово лишних кликов которыми страдают все популярные аналоги. Добавил — вычеркнул, добавил — вычеркнул. <br><br>
+								a.link(href="#") Скачать из Google Play
+
+						.col-xs-5
+							p.project__madein.project__madein--logomotiv Проект выполнен в<br>
+								a.link(href="http://logomotivapp.ru/") Дизайн-&nbsp;студии Logomotiv
+						.col-xs-3
+							p.project__madein Арт-директор: <br>Иван Большов
+						.col-xs-3 
+							p.project__madein Разработчик: <br>Илья Мясоедов
+
+
+				.col-xs-4
+					
+					.whatobuy__video-inner
+						video(autoplay="" loop="" muted="" preload="none")
+							source(src="video/whatobuy.webm" type="video/webm")
+							source(src="video/whatobuy.mp4" type="video/mp4")
+
+
+	section.whatobuy__screens
+
+		p.whatobuy__screens-flow Больше 30 экранов.<br>Адаптировано под планшеты
+
+
+	:verbatim
+	include ./blocks/footer.jade

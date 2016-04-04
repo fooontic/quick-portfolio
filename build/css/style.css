@@ -1,3 +1,4 @@
+@charset 'UTF-8';
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html
 {
@@ -1779,6 +1780,10 @@ button
 {
     color: #fff;
 }
+.about .project__h3
+{
+    margin-bottom: .4em;
+}
 .container-fluid
 {
     min-width: 320px;
@@ -2085,6 +2090,206 @@ button
     cursor: default;
 
     color: #fff;
+}
+.repair
+{
+    position: relative;
+
+    padding: 40px 0 70px;
+}
+.repair__flow
+{
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.3em;
+}
+.repair:before
+{
+    position: absolute;
+
+    width: 100%;
+    height: 30px;
+
+    content: '';
+
+    background-image: url(../img/border.png);
+    background-repeat: repeat-x;
+    background-position: center center;
+    background-size: contain;
+}
+.repair:before
+{
+    top: 2px;
+
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg);
+}
+.repair__after
+{
+    position: relative;
+
+    overflow: hidden;
+
+    width: 100%;
+    height: 30px;
+    margin-top: 50px;
+
+    cursor: pointer;
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+
+    background-image: url(../img/border.png);
+    background-repeat: repeat-x;
+    background-position: center center;
+    background-size: contain;
+}
+.repair__do-not-cross
+{
+    font-family: 'Oswald', 'Arial', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 30px;
+
+    position: absolute;
+    right: 10%;
+
+    padding: 0 3px 0;
+
+    text-transform: uppercase;
+
+    color: #262626;
+    background-color: #fff;
+}
+@-webkit-keyframes loading-animation
+{
+    0%,
+    40%,
+    100%
+    {
+        -webkit-transform: scale(1, 1);
+                transform: scale(1, 1);
+
+        opacity: .7;
+    }
+    20%
+    {
+        -webkit-transform: scale(1.4, 1.4);
+                transform: scale(1.4, 1.4);
+
+        opacity: 1;
+    }
+}
+@keyframes loading-animation
+{
+    0%,
+    40%,
+    100%
+    {
+        -webkit-transform: scale(1, 1);
+                transform: scale(1, 1);
+
+        opacity: .7;
+    }
+    20%
+    {
+        -webkit-transform: scale(1.4, 1.4);
+                transform: scale(1.4, 1.4);
+
+        opacity: 1;
+    }
+}
+.loading
+{
+    -webkit-transform: skewX(-15deg);
+            transform: skewX(-15deg);
+}
+.loading__item
+{
+    display: inline-block;
+
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+
+    -webkit-animation-name: loading-animation;
+            animation-name: loading-animation;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    vertical-align: middle;
+
+    opacity: .5;
+    background-color: #262626;
+
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+.loading__item--2
+{
+    -webkit-animation-delay: -.9s;
+            animation-delay: -.9s;
+}
+.loading__item--3
+{
+    -webkit-animation-delay: -.8s;
+            animation-delay: -.8s;
+}
+.about__blog-item
+{
+    margin-bottom: 10px;
+}
+.about__blog-link
+{
+    display: inline-block;
+}
+.about__blog-date
+{
+    display: block;
+
+    color: #807c7c;
+}
+.about__flow
+{
+    margin: 0 0 1em;
+}
+.about__photo
+{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.about .btn
+{
+    position: relative;
+
+    display: block;
+
+    width: 300px;
+    margin: 50px auto 50px;
+    padding: 9px 30px 10px;
+
+    -webkit-transition: all .4s;
+            transition: all .4s;
+    -webkit-transform: 21px;
+            transform: 21px;
+    text-align: center;
+    text-decoration: none;
+
+    color: rgba(169, 101, 102, .8);
+    border: 2px solid rgba(169, 101, 102, .5);
+    border-radius: 22px;
+}
+.about .btn:hover
+{
+    cursor: pointer;
+    -webkit-transition: all .2s;
+            transition: all .2s;
+    text-decoration: none;
+
+    color: #a96566;
+    border: 2px solid #a96566;
 }
 .whatobuy__promo
 {
@@ -2436,4 +2641,245 @@ button
 {
     -webkit-animation-name: slideInRight;
             animation-name: slideInRight;
+}
+.daisy__project
+{
+    min-width: 1300px;
+    padding: 50px 0 100px;
+
+    text-align: center;
+
+    background-color: #5085c9;
+}
+.daisy header
+{
+    min-width: 1300px;
+}
+.daisy__flow
+{
+    font-size: 21px;
+    font-weight: 300;
+
+    width: 600px;
+    margin: 0 auto 100px;
+
+    color: #fff;
+}
+.carousel
+{
+    box-sizing: content-box;
+    width: 1300px;
+    margin: 0 auto;
+}
+.carousel .img-inner
+{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
+}
+.carousel img
+{
+    display: block;
+
+    height: auto;
+    margin: 0 auto;
+}
+.slick-arrow
+{
+    display: none !important;
+}
+/* Slider */
+.slick-loading .slick-list
+{
+    background: #fff url('ajax-loader.gif') center center no-repeat;
+}
+/* Icons */
+@font-face
+{
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('fonts/slick.eot');
+    src: url('fonts/slick.eot?#iefix') format('embedded-opentype'), url('fonts/slick.woff') format('woff'), url('fonts/slick.ttf') format('truetype'), url('fonts/slick.svg#slick') format('svg');
+}
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    margin-top: -10px \9;
+    padding: 0;
+
+    cursor: pointer;
+    /*lte IE 8*/
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover,
+.slick-next:hover,
+.slick-prev:focus,
+.slick-next:focus
+{
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover:before,
+.slick-next:hover:before,
+.slick-prev:focus:before,
+.slick-next:focus:before
+{
+    opacity: 1;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before
+{
+    opacity: .25;
+}
+.slick-prev:before,
+.slick-next:before
+{
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+
+    opacity: .75;
+    color: white;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-prev
+{
+    left: -25px;
+}
+.slick-prev[dir='rtl']
+{
+    right: -25px;
+    left: auto;
+}
+.slick-prev:before
+{
+    content: '←';
+}
+.slick-prev:before[dir='rtl']
+{
+    content: '→';
+}
+.slick-next
+{
+    right: -25px;
+}
+.slick-next[dir='rtl']
+{
+    right: auto;
+    left: -25px;
+}
+.slick-next:before
+{
+    content: '→';
+}
+.slick-next:before[dir='rtl']
+{
+    content: '←';
+}
+/* Dots */
+.slick-slider
+{
+    margin-bottom: 30px;
+}
+.slick-dots
+{
+    position: absolute;
+    bottom: -45px;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.slick-dots li button:before
+{
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    content: '•';
+    text-align: center;
+
+    opacity: .25;
+    color: black;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before
+{
+    opacity: .75;
+    color: black;
 }

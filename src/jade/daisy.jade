@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+html(lang="ru")
+head
+	
+	title Чокупить? — Дизайн списка покупок для Android
+	:verbatim
+	include ./blocks/head.jade
+
+	link(rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css")
+
+
+body.daisy
+	
+	header
+		.supheader
+
+		.header
+			.container-fluid
+				.row
+					
+					.col-xs-4
+						//- a.header__btn.header__btn--prev(href=prev) Предыдущий
+
+					.col-xs-4
+						a.header__logo(href="index.html")
+							img.logo.m0a.img-responsive(src="img/logo.svg",alt="Vadik Matveev")
+					.col-xs-4
+						a.header__btn.header__btn--next.pull-right(href='http://logomotivapp.ru/' target='_blanck') Следующий
+
+	section.daisy__project
+		.container-fluid
+			h1.project__title.white Daisy Extreme
+			p.daisy__flow Проект над которым работаю сейчас. Сайт для бронирования спортивных мероприятий в России и Странах восточной европы. Не закончен, в стадии разработки.
+
+		.carousel
+			.img-inner
+				img(src="img/daisy/main_d.jpg", alt="" )
+			.img-inner
+				img(data-lazy="img/daisy/main_t.jpg", alt="" )
+			.img-inner
+				img(data-lazy="img/daisy/main_p.jpg", alt="" )
+
+			.img-inner
+				img(data-lazy="img/daisy/search-d.jpg", alt="" )
+			.img-inner
+				img(data-lazy="img/daisy/search-t.jpg", alt="" )
+			.img-inner
+				img(data-lazy="img/daisy/search-p.jpg", alt="" )
+
+			.img-inner
+				img(data-lazy="img/daisy/offer_d.jpg", alt="" )
+			.img-inner
+				img(data-lazy="img/daisy/offer_t.jpg", alt="" )
+			.img-inner
+				img(data-lazy="img/daisy/offer_p.jpg", alt="" )
+
+			.img-inner
+				img(data-lazy="img/daisy/new_offer_d.jpg", alt="" )
+			.img-inner
+				img(data-lazy="img/daisy/new_offer_t.jpg", alt="" )
+			.img-inner
+				img(data-lazy="img/daisy/new_offer_p.jpg", alt="" )
+
+			.img-inner
+				img(data-lazy="img/daisy/booking_d.jpg", alt="" )
+			.img-inner
+				img(data-lazy="img/daisy/booking_t.jpg", alt="" )
+			.img-inner
+				img(data-lazy="img/daisy/booking_p.jpg", alt="" )
+
+			.img-inner
+				img(data-lazy="img/daisy/favs_d.jpg", alt="" )
+			.img-inner
+				img(data-lazy="img/daisy/favs_t.jpg", alt="" )
+			.img-inner
+				img(data-lazy="img/daisy/favs_p.jpg", alt="" )
+
+
+
+
+
+	script(src="js/main.min.js")
+	script(type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js")
+
+	script.
+		$('.carousel').slick({
+			lazyLoad: 'ondemand',
+			speed: 300,
+			slidesToShow: 1,
+			adaptiveHeight: true
+		});
+
+	
