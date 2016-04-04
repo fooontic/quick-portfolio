@@ -23,6 +23,15 @@
 		margin-top: 50px;
 	}
 
+	& .header {
+		box-shadow: none;
+	}
+
+	& .footer {
+		position: fixed;
+		bottom: 0;
+	}
+
 	& .btn {
 		color: fade(@link, 80%);
 		display: block;
@@ -30,7 +39,7 @@
 		text-transform: uppercase;
 		letter-spacing: 1px;
 		text-align: center;
-		width: 350px;
+		width: 360px;
 		margin: 50px auto 50px;
 		text-decoration: none;
 		border: 2px solid fade(@link, 50%);
@@ -39,12 +48,38 @@
 		position: relative;
 		transition: all .4s;
 		transform: 21px;
+
+		&:after {
+			content: '';
+			position: absolute;
+			display: block;
+			width: 13px;
+			height: 13px;
+			border-top: 2px;
+			border-right: 2px;
+			border-top-color: @link;
+			border-right-color: @link;
+			border-top-style: solid;
+			border-right-style: solid;
+			right: 40px;
+			top: 18px;
+			opacity: 0;
+			transform: rotate(45deg);
+			transition: all .4s;
+		}
+
 		&:hover {
 			text-decoration: none;
 			border: 2px solid @link;
 			color: @link;
 			transition: all .2s;
 			cursor: pointer;
+
+			&:after {
+				opacity: 1;
+				right: 27px;
+				transition: all .3s;
+			}
 		}
 	}
 }

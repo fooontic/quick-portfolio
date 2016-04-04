@@ -10,12 +10,14 @@
 
 	&__btn {
 		color: fade(@link, 80%);
+		background-color: fade(#fff, 30%);
 		display: inline-block;
 		text-decoration: none;
 		border: 2px solid fade(@link, 50%);
 		border-radius: 22px;
 		padding: 9px 30px 10px;
-		position: relative;
+		position: fixed;
+		box-shadow: 0 0 0 transparent;
 		transition: all .4s;
 
 		&:before {
@@ -45,7 +47,8 @@
 		}
 
 		&--next{			
-			padding-right: 40px; 
+			padding-right: 40px;
+			margin-left: 207px;
 
 			&:before{
 				left: auto;
@@ -60,6 +63,8 @@
 			text-decoration: none;
 			border: 2px solid @link;
 			color: @link;
+			background-color: fade(#fff, 80%);
+			box-shadow: 0 6px 13px fade(black, 25%);
 			transition: all .2s;
 
 			&:before {

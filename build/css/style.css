@@ -1860,7 +1860,7 @@ button
 }
 .header__btn
 {
-    position: relative;
+    position: fixed;
 
     display: inline-block;
 
@@ -1873,6 +1873,8 @@ button
     color: rgba(169, 101, 102, .8);
     border: 2px solid rgba(169, 101, 102, .5);
     border-radius: 22px;
+    background-color: rgba(255, 255, 255, .3);
+    box-shadow: 0 0 0 transparent;
 }
 .header__btn:before
 {
@@ -1907,6 +1909,7 @@ button
 }
 .header__btn--next
 {
+    margin-left: 207px;
     padding-right: 40px;
 }
 .header__btn--next:before
@@ -1925,6 +1928,8 @@ button
 
     color: #a96566;
     border: 2px solid #a96566;
+    background-color: rgba(255, 255, 255, .8);
+    box-shadow: 0 6px 13px rgba(0, 0, 0, .25);
 }
 .header__btn:hover:before
 {
@@ -2260,6 +2265,15 @@ button
     margin-top: 50px;
     margin-bottom: 20px;
 }
+.about .header
+{
+    box-shadow: none;
+}
+.about .footer
+{
+    position: fixed;
+    bottom: 0;
+}
 .about .btn
 {
     font-size: 18px;
@@ -2268,7 +2282,7 @@ button
 
     display: block;
 
-    width: 350px;
+    width: 360px;
     margin: 50px auto 50px;
     padding: 12px 30px 13px;
 
@@ -2285,6 +2299,31 @@ button
     border: 2px solid rgba(169, 101, 102, .5);
     border-radius: 30px;
 }
+.about .btn:after
+{
+    position: absolute;
+    top: 18px;
+    right: 40px;
+
+    display: block;
+
+    width: 13px;
+    height: 13px;
+
+    content: '';
+    -webkit-transition: all .4s;
+            transition: all .4s;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+
+    opacity: 0;
+    border-top: 2px;
+    border-top-style: solid;
+    border-top-color: #a96566;
+    border-right: 2px;
+    border-right-style: solid;
+    border-right-color: #a96566;
+}
 .about .btn:hover
 {
     cursor: pointer;
@@ -2294,6 +2333,15 @@ button
 
     color: #a96566;
     border: 2px solid #a96566;
+}
+.about .btn:hover:after
+{
+    right: 27px;
+
+    -webkit-transition: all .3s;
+            transition: all .3s;
+
+    opacity: 1;
 }
 .whatobuy__promo
 {
