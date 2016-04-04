@@ -2262,13 +2262,15 @@ button
 }
 .about .btn
 {
+    font-size: 18px;
+
     position: relative;
 
     display: block;
 
-    width: 300px;
+    width: 350px;
     margin: 50px auto 50px;
-    padding: 9px 30px 10px;
+    padding: 12px 30px 13px;
 
     -webkit-transition: all .4s;
             transition: all .4s;
@@ -2276,10 +2278,12 @@ button
             transform: 21px;
     text-align: center;
     text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 
     color: rgba(169, 101, 102, .8);
     border: 2px solid rgba(169, 101, 102, .5);
-    border-radius: 22px;
+    border-radius: 30px;
 }
 .about .btn:hover
 {
@@ -2661,9 +2665,15 @@ button
     font-weight: 300;
 
     width: 600px;
-    margin: 0 auto 100px;
+    margin: 0 auto 50px;
 
     color: #fff;
+}
+.daisy__flow span
+{
+    font-family: 'PT Serif', serif;
+    font-size: 18px;
+    font-style: italic;
 }
 .carousel
 {
@@ -2673,7 +2683,8 @@ button
 }
 .carousel .img-inner
 {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
 .carousel img
 {
@@ -2681,6 +2692,8 @@ button
 
     height: auto;
     margin: 0 auto;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .4);
 }
 .slick-arrow
 {

@@ -50,7 +50,7 @@ var projectPath = {
         jade: 'src/jade/**/*.jade',
         // jsCustom: 'src/js/custom.js',
         // jsVendor: 'src/js/vendor.js',
-        js: 'src/js/**/*.js',
+        js: 'src/js/main.js',
         style: 'src/less/style.less',
         img: 'src/img/**/*.*'
     },
