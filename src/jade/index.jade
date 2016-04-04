@@ -11,7 +11,7 @@ body.whatobuy
 	:verbatim
 	include ./mixins/header.jade
 
-	+header('#','#')
+	+header('#','durecipes_app.html')
 
 	section.whatobuy__promo.white
 		.container-fluid
@@ -39,7 +39,7 @@ body.whatobuy
 				.col-xs-4
 					
 					.whatobuy__video-inner
-						video(autoplay="" loop="" muted="" poster="video/whatobuy.png")
+						video(autoplay="" loop="" muted="" preload="none")
 							source(src="video/whatobuy.webm" type="video/webm")
 							source(src="video/whatobuy.mp4" type="video/mp4")
 
